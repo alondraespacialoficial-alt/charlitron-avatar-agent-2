@@ -25,6 +25,18 @@ export default function ChatAsistente() {
   const [abierto, setAbierto] = useState(false)
   const mensajesRef = useRef<HTMLDivElement>(null)
 
+  // Ocultar avatar cuando el chat está abierto
+  useEffect(() => {
+    const avatarContainer = document.getElementById('avatar-container')
+    if (avatarContainer) {
+      if (abierto) {
+        avatarContainer.style.display = 'none'
+      } else {
+        avatarContainer.style.display = 'flex'
+      }
+    }
+  }, [abierto])
+
   useEffect(() => {
     if (mensajesRef.current) {
       mensajesRef.current.scrollTop = mensajesRef.current.scrollHeight
