@@ -200,16 +200,11 @@ Duración: 1-6 horas`
 
       {/* Ventana de chat */}
       {abierto && (
-        <div className="fixed bottom-0 right-0 sm:bottom-6 sm:right-6 z-50 bg-slate-800 sm:rounded-2xl shadow-2xl border border-purple-500/30 overflow-hidden"
+        <div className="fixed bottom-0 right-0 sm:bottom-6 sm:right-6 z-50 bg-slate-800 sm:rounded-2xl shadow-2xl border border-purple-500/30 overflow-hidden w-full h-full sm:w-[420px] sm:h-[650px] sm:max-h-[85vh]"
           style={{ 
-            width: '100vw', 
-            height: '100vh',
-            maxWidth: '100%',
-            maxHeight: '100%',
             display: 'flex', 
             flexDirection: 'column'
           }}
-          className="fixed bottom-0 right-0 sm:bottom-6 sm:right-6 z-50 bg-slate-800 sm:rounded-2xl shadow-2xl border border-purple-500/30 overflow-hidden sm:w-[400px] sm:h-[600px] w-full h-full"
         >
           {/* Header */}
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 flex justify-between items-center">
