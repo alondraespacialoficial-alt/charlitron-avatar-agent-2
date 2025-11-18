@@ -212,10 +212,11 @@ Duración: 1-6 horas`
 
       {/* Ventana de chat */}
       {abierto && (
-        <div className="fixed bottom-0 right-0 sm:bottom-6 sm:right-6 z-50 bg-slate-800 sm:rounded-2xl shadow-2xl border border-purple-500/30 overflow-hidden w-full h-full sm:w-[420px] sm:h-[650px] sm:max-h-[85vh]"
+        <div className="fixed bottom-0 right-0 sm:bottom-6 sm:right-6 bg-slate-800 sm:rounded-2xl shadow-2xl border border-purple-500/30 overflow-hidden w-full h-full sm:w-[420px] sm:h-[650px] sm:max-h-[85vh]"
           style={{ 
             display: 'flex', 
-            flexDirection: 'column'
+            flexDirection: 'column',
+            zIndex: 10000
           }}
         >
           {/* Header */}
