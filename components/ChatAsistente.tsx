@@ -16,7 +16,7 @@ export default function ChatAsistente() {
   const [mensajes, setMensajes] = useState<Mensaje[]>([
     {
       rol: 'asistente',
-      texto: '¡Hola! Soy tu asistente virtual de Charlitron Agencia 360. Puedo ayudarte a:\n\n📅 Consultar disponibilidad de citas\n✅ Agendar citas para servicios\n❌ Cancelar citas existentes\n\n💰 Si deseas cotizar un servicio, puedes:\n- Usar el botón "Cotizador de Servicios" abajo\n- Contactar directamente por WhatsApp para atención personalizada\n\n¿En qué puedo ayudarte?',
+      texto: '👋 ¡Hola! Soy tu asistente virtual de Charlitron Agencia 360.\n\n🚀 Puedo ayudarte con:\n\n📅 Consultar disponibilidad de citas\n✅ Agendar servicios de publicidad\n❌ Cancelar o reprogramar citas\n\n💼 Nuestros servicios:\n📢 Perifoneo | 📄 Volanteo | 🎉 Activaciones\n📊 Consultoría Marketing | 🎥 Producción Visual\n\n💡 ¿En qué puedo ayudarte hoy?',
       timestamp: new Date()
     }
   ])
